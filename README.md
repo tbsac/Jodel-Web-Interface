@@ -1,9 +1,8 @@
 # Jodel Web Interface
 
-For educational purposes only!
+For educational purposes only. Request logic heavily inspired by OJOC.
 
-Offers a web interface for the Jodel app. Run `web/webserver.py` and then
-navigate to `localhost:8080`.
+Offers a web interface for the Jodel app. Run `web/webserver.py` and then open `web/index.html` in your browser.
 
 ### Requirements
 
@@ -11,4 +10,3 @@ navigate to `localhost:8080`.
 - requests
 
 
-Request logic inspired by OJOC.
