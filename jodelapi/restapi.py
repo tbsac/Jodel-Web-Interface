@@ -7,7 +7,7 @@ import datetime
 
 
 
-APP_VERSION = '4.13.2'
+APP_VERSION = '4.14.1'
 PORT = 443
 CLIENT_ID = "81e8a76e-1e02-4d17-9ba0-8a7020261b26"
 API_URL_BASE = 'api.go-tellm.com'
@@ -28,7 +28,9 @@ class ConfigEntry():
         self.client_type = x_client_type
         self.api_version = x_api_version
 
-APP_CONFIG = ConfigEntry('iyWpGGuOOCdKIMRsfxoJMIPsmCFdrscSxGyCfmBb', version_string='4.13.2', x_api_version='0.2')
+
+# See https://bitbucket.org/cfib90/ojoc/
+APP_CONFIG = ConfigEntry('jcUwaNNZwTSaMgbEEohXJhncvyIMdnZkFecWfPOU', version_string='4.14.1', x_api_version='0.2')
 
 
 class APIMethod:

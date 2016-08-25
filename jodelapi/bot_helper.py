@@ -27,6 +27,17 @@ def load_auth(device_uid):
     with open(join(TOKEN_FOLDER, device_uid + TOKEN_FILE_SUFFIX)) as handle:
         return json.load(handle)
 
+def check_already_processed(auth, post_id):
+    if "processed" in auth:
+        return post_id in auth["processed"]
+    return False
+
+def mark_processed(auth, post_id):
+    if "processed" in auth:
+        auth["processed"].append(post_id)
+    else:
+        auth["processed"] = [post_id]
+
 def get_all_device_uids():
     files = os.listdir(TOKEN_FOLDER)
     uids = []
